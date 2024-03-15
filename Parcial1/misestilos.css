@@ -20,3 +20,22 @@ span ul li{
     font-style: inherit;
     font-weight: 700;
 }
+
+#boton{
+    background-color: rgb(134, 179, 219);
+    border: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    padding: 20px;
+    color: blueviolet;
+}
+.texto{
+    color: blue;
+}
+.link{
+    color: rgb(35, 3, 71);
+}
+a:hover{
+    color: rgb(216, 106, 17);
+}
