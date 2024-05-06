@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "minecraft";
+    src: url("/Minecraft/minecraftt/fuentes/minecraft.ttf");
+}
+body{
+    font-family: "minecraft";
+}
+h1{
+    font-family: "minecraft";
+    font-weight: bold;
+    color: blue;
+}
