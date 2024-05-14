@@ -5,9 +5,11 @@
 
 body{
     font-family: "minecraft";
+    background-color: rgb(22, 20, 20);
 }
 
 .h1{
    font-family: "minecraft";
    font-weight: bold;
+   
 }
