@@ -4,24 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <br><img src="imagenes/logominecraft.svg" alt="" width="17%">
-    <!-- Example single danger button -->
-<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Action
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">JUEGOS</a></li>
-      <li><a class="dropdown-item" href="#">TIENDA</a></li>
-      <li><a class="dropdown-item" href="#">COMUNIDAD</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">SOPORTE TECNICO</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-darck bg-darck">
+    <div class="container-fluid">
+      <img src="imagenes/logominecraft.svg" alt="" width="17%">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              JUEGOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Miencraft</a></li><hr>
+              <li><a class="dropdown-item" href="#">Minecraft Dungeons</a></li><hr>
+              <li><a class="dropdown-item" href="#">Minecraft Legends</a></li><hr>
+              <li><a class="dropdown-item" href="#">Minecraft Education</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            TIENDA
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Juegos</a></li><hr>
+            <li><a class="dropdown-item" href="#">Marketplace</a></li><hr>
+            <li><a class="dropdown-item" href="#">Comercialización</a></li><hr>
+          </ul>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            SOPORTE TÉCNICO
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Soporte técnico</a></li><hr>
+            <li><a class="dropdown-item" href="#">Descargas</a></li><hr>
+          </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              CUENTA
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <br>
+              <li><a class="dropdown-item" href="#">PERFIL</a></li><hr>
+              <li><a class="dropdown-item" href="#">CANJEAR</a></li><hr>
+              <li><a class="dropdown-item" href="#">CERRAR SESIÓN</a></li><hr>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <video controls src="Videos/Minecraft_update.mp4" type="video/mp4" width="100%">
+    
+  </video>
+  <div class="card-group">
+    <div class="card">
+      <img src="imagenes/minecraft_oficial.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft</h5>
+        <p class="card-text">Minecraft es un juego formado por bloques, criaturas y comunidades. Los bloques se pueden utilizar para rediseñar el mundo o construir creaciones fantásticas. Las criaturas pueden ser tus amigas o puede que tengas que luchar contra ellas, dependiendo de tu estilo de juego.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imagenes/Minecraftdugneos.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft Dugneos</h5>
+        <p class="card-text">Lucha contra criaturas icónicas, embárcate en misiones llenas de tesoros y colecciona objetos legendarios.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imagenes/Minecraft_Leyends.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft Legends</h5>
+        <p class="card-text">Descubre los misterios de Minecraft Legends, un nuevo juego de acción y estrategia. Lidera a tus aliados en heroicas batallas para defender la Superficie de los destructivos piglins.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imagenes/miencraft_education.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft Education</h5>
+        <p class="card-text">Una plataforma de aprendizaje basado en juego que ofrece apoyo a miles de formadores de más de 100 países. Ve el anterior vídeo de muestra de la experiencia del juego de Minecraft Education.</p>
+      </div>
+    </div>
   </div>
-<h1> Bienvenido ala pagina con fuentes de jueguitos</h1>
-<p>este es un ejemplo de texto</p>
+  
+  </div>
+  
+<hr>
+<br><br>
+<h1 style="color: white;"> Bienvenido ala pagina con fuentes de jueguitos</h1>
+<p style="color: mediumpurple;">Echo por Alexia Katherine Vazquez Valdez y Daniel Alejandro Lopez Martínez</p>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
