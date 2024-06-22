@@ -13,12 +13,33 @@
         <h3 style="color: #82cdff;">Vazquez Valdez Alexia Katherine </h3>
         <div class="row">
             <div class="col">
+
                 <h5> Consulta #1. Obtener listado de todos los alumnos de la facultad</h5><hr>
-                <h2  style="color: #9279cb" >SELECT * FROM alumno;</h2>
+                <h6  style="color: #9279cb" >SELECT * FROM alumno;</h6>
                 <img src="imagenes/1.png" alt="" class="img-fluid">
-                <h2  style="color: #9279cb" >SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso</h2>
+
                 <h5>Consulta #2. Obtener listado de cursos (nombre) y todas las asignaturas que tiene </h5>
+                 <h6  style="color: #9279cb" >SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso</h6>
                 <img src="imagenes/2.png" alt="" class="img-fluid">
+
+                <h5>Consulta #3. Obtener listado de alumnos (Nombre y apellido) de alumnos que tengan beca </h5>
+                <h6  style="color: #9279cb" >SELECT alumno.apellido1, alumno.nombre FROM alumno WHERE beca LIKE "si"</h6>
+                <img src="imagenes/3.png" alt="" class="img-fluid">
+
+                <h5>Consulta #4. Obtener listado de profesores (Nombre y apellido) y numero de telefono </h5>
+                <h6  style="color: #9279cb" >SELECT profesor.nombre apellido1, apellido2 , tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h6>           
+                <img src="imagenes/4.png" alt="" class="img-fluid">
+
+                <h5>Consulta #5. Obtener listado de alumnos (todos los campos) que estan inscritos a la asignatura de programacion </h5>
+                <h6  style="color: #9279cb" >SELECT * FROM alumno INNER JOIN asignatura ON asignatura.idAsignatura LIKE "AS009"</h6>           
+                <img src="imagenes/5.png" alt="" class="img-fluid">
+
+                <h5>Consulta #6. Obtener listado de profesoresy asignaturas que imparten </h5>
+                <h6  style="color: #9279cb" >SELECT * FROM alumno INNER JOIN asignatura ON asignatura.idAsignatura LIKE "AS009"</h6>           
+                <img src="imagenes/6.png" alt="" class="img-fluid">
+
+
+
             </div>
         </div>
     </div>
