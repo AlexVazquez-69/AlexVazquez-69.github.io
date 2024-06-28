@@ -38,6 +38,22 @@
                 <h6  style="color: #9279cb" >SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h6>           
                 <img src="imagenes/6.png" alt="" class="img-fluid">
 
+                <h5>Consulta #7. Mostrar la asignatura que tiene mas alumnos en total </h5>
+                <h6  style="color: #9279cb" >SELECT 	asignatura.nombre, COUNT (matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC</h6>           
+                <img src="imagenes/7.jpg" alt="" class="img-fluid">
+
+                <h5>Consulta #8. Obtener listado de alumnos que les da clase el profesor con id PR048 (Jose Manuel), sin importan en que asignaturas este inscrito </h5>
+                <h6  style="color: #9279cb" >SELECT alumno.nombre, profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idProfesor ="PR048" INNER JOIN matricula ON impartir.idAsignatura=matricula.idAsignatura</h6>           
+                <img src="imagenes/8.png" alt="" class="img-fluid">
+
+                <h5>Consulta #9. Obten listado de cursos con asignatura, y el maestro que las imparte </h5>
+                <h6  style="color: #9279cb" >SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso = curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor</h6>           
+                <img src="imagenes/9.png" alt="" class="img-fluid">
+
+                <h5>Consulta #10. Mostrar alumnos xon asignatura, profesor y curso </h5>
+                <h6  style="color: #9279cb" >SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura = asignatura.idAsignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso</h6>           
+                <img src="imagenes/10.png" alt="" class="img-fluid">
+
 
 
             </div>
