@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica #1. Envio de datos con PHP</title>
+</head>
+<body bgcolor="#00897b">
+    <h1>Envío de datos con PHP</h1>
+    <form action="practica1.php" method="GET">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" required><br><br>
+
+        <label for="">Edad:</label>
+        <input type="text" name="edad" required><br><br>
+
+        <label for="">Escuela</label>
+        <select name="escuela" id="" required>
+            <option value="">Selecciona una escuela</option>
+            <option value="Cetis107">Prepa Cetis 107</option>
+            <option value="Cobaes">Escuela Cobaes</option>
+        </select> <br><br>
+
+        <label for="">Color favorito:</label>
+        <input type="text" name="color" required><br><br>
+
+        <label for="">Red social favorita</label>
+        <select name="red_social" id="" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Tiktok">Tiktok</option>
+            <option value="Snapchat">Snapchat</option>
+            <option value="Twitch">Twitch</option>
+            <option value="Discord">Discord</option>
+            <option value="X">X</option>
+        </select> <br><br>
+
+        <!-- Agregar otros 2 campos -->
+
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+</html>
