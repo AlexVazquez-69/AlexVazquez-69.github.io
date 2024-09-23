@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body bgcolor="#b39ddb">
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row" style="background-color: rgba(255, 0, 0, 0)">
+                <h1 style="color: rgb(122, 44, 185);">¿Qué tanto sabes de Minecraft?</h1><hr>
+                    
+                
+                
+                <div class="card mb-4">
+                        <div class="card-header" style="background-color: rgb(167, 67, 180);">
+                        1.¿Qué es Minecraft?
+                        </div>
+                        <div class="card-body" style="background-color: rgba(167, 67, 180, 0);">
+                            <p><input type="radio" name="pregunta1" value="Un videojuego" required>  Un videojuego</p>
+                            <p><input type="radio" name="pregunta1" value="Un video" required>  Un video </p>
+                            <p><input type="radio" name="pregunta1" value="Un libro" required >  Un libro </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="background-color: rgb(167, 67, 180);">
+                        <p>
+                            2. ¨Alguien <input type="text" name="pregunta2" value="" required>.¨
+
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(167, 67, 180)">
+                        3. 
+                        ¿Qué se necesita para carftear una mesa de encantamientos? (Selecciona 1)
+                        </div>
+                        <div class="card-body" style="background-color:rgba(167, 67, 180, 0);">
+                            <p><input type="checkbox" name="pregunta3[]" value="Dos diamantes, cuatro de obsidiana y 1 libro"> Dos diamantes, cuatro de obsidiana y 1 libro </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Cuatro de madera y una espada de mader"> Cuatro de madera y una espada de madera </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Dos palos de madera, una valla y una shulker"> Dos palos de madera, una valla y una shulker</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(167, 67, 180);">
+                        4. ¿Que es el diamante?
+                        </div>
+                        <div class="card-body" style="background-color: rgba(255, 166, 0, 0);">
+                            <p><input type="radio" name="pregunta4" value="Herramienta" required> Herramienta </p>
+                            <p><input type="radio" name="pregunta4" value="Mineral" required> Mineral </p>
+                            <p><input type="radio" name="pregunta4" value="Pocion" required > Pocion </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="background-color:rgb(167, 67, 180);">
+                        <p>
+                            5. “No borres un mundo <input type="text" name="pregunta5" value="" required> .”
+
+                        </p>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(167, 67, 180);">
+                        6. ¿Cuando se creo Minecraft?
+                        </div>
+                        <div class="card-body" style="background-color: rgba(255, 166, 0, 0);">
+                            <p><input type="radio" name="pregunta6" value="17 de Mayo del 2009" required> 17 de Mayo del 2009 </p>
+                            <p><input type="radio" name="pregunta6" value="18 de Noviembre del 2011" required> 18 de Noviembre del 2011 </p>
+                            <p><input type="radio" name="pregunta6" value="11 de Enero del 2013" required > 11 de Enero del 2013 </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="background-color: rgb(167, 67, 180);">
+                        <p>
+                            7. “No dejes arboles <input type="text" name="pregunta7" value="" required> ”
+
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(167, 67, 180);">
+                        8. ¿Quien fue el creador de minecraft, antes de que fuera adquirido por cierta empresa? (Seleccione 2) 
+                        </div>
+                        <div class="card-body" style="background-color: rgba(255, 166, 0, 0);">
+                            <p><input type="checkbox" name="pregunta8[]" value="Mojang"> Mojang </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Markus Persson (Notch)"> Markus Persson </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Notch" > Notch </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(167, 67, 180);">
+                        9. ¿Que lenguaje de programacion se utilizo para crear la primera version de minecraft?
+                        </div>
+                        <div class="card-body" style="background-color: rgba(255, 166, 0, 0);">
+                            <p><input type="radio" name="pregunta9" value="C++" required> C++ </p>
+                            <p><input type="radio" name="pregunta9" value="Python" required> Python </p>
+                            <p><input type="radio" name="pregunta9" value="Java" required> Java </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="background-color: rgb(167, 67, 180);">
+                        <p>
+                            10. ¨Maravillas infinitas, <input type="text" name="pregunta10" value="" required>.¨
+                        </p>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen" style="background-color: rgb(186, 99, 210);">
+        </form>
+    </div>
+</body>
+</html>
